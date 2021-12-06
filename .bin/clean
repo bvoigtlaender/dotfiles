@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ -d 'ios' -a -d 'android' ]
+then
+  rm -rf package-lock.json node_modules
+  npm install
+  cd android
+  ./gradlew clean
+  cd ../ios
+  rm -rf Pods Podfile.lock
+  pod install
+  cd ..
+else
+  echo 'React-Native project not found'
+fi

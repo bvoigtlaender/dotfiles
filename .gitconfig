@@ -1,0 +1,7 @@
+[pull]
+	rebase = false
+[user]
+	name = Bjarne Voigtländer
+	email = bjarne.voigtlaender@the-white-label.com
+[init]
+	defaultBranch = main
